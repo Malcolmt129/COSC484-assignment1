@@ -1,3 +1,26 @@
 #SignUpText {
     font-size: smaller;
 }
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 75%;
+    background-color: #808080;
+}
+
+th {
+    font-weight: bold;
+    border: 1px solid black;
+
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#logo {
+    float: right;
+    height: 250px;
+    width: 900px; 
+}

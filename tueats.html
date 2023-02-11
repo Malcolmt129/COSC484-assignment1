@@ -5,15 +5,66 @@
 
     <body>
         <form method="get" action="tueats_completed.html">
-                <input type="text" name="username" placeholder="Username" required /><br>
-                <input type="text" name="email" placeholder="Email" required /><br>
-                <input type="text" name="referral code" placeholder="Referral Code" /><br>
-                <input type="password" name="password" placeholder="Password" required><br>
-                <input type="text" name="password_verify" placeholder="Verify Password" required><br>
+            <fieldset>
+                
+                <legend>Sign up</legend>
+                <img src="TowsonUlogo-horiz-color-pos.png" alt="Towson Logo" id="logo">
+                <label for="username"> Username: </label>
+                <input type="text" name="username"  required /><br><br>
+                
+                <label for="email"> Email: </label>
+                <input type="text" name="email" required /><br><br>
+
+                <label for="username"> Referral Code: </label>
+                <input type="text" name="referral code" /><br><br>
+                
+                <label for="username"> Password: </label>
+                <input type="password" name="password" required><br><br>
+                
+                <label for="username"> Verify Password: </label>
+                <input type="text" name="password_verify" required><br><br>
                 
                 
                 <input type="checkbox" name="SignUp">
                 <label for="SignUp" id="SignUpText"> Sign up for our newsletter? </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Menu</legend>
+                <table>
+                    <caption>Menu is subject to change, please visit our <a href="https://www.towson.edu/"> main site </a> for more information</caption>
+                        <tr>
+                            <th> </th>
+                            <th class="item_name"> Name </th>
+                            <th> Price </th>
+                            <th> Calories </th>
+                        </tr>
+                        
+                        <tr>
+                            <td>item 1</td>
+                            <td class="item_name">Burger</td>
+                            <td>$8</td>
+                            <td>550</td>
+                        </tr>
+
+                        <tr>
+                            <td>item 2</td>
+                            <td class="item_name">Mozzarella Sticks</td>
+                            <td>$7</td>
+                            <td rowspan="2">400</td>
+                            
+                            
+                        </tr>
+
+                        <tr>
+                            <td>item 3</td>
+                            <td class="item_name">Fries</td>
+                            <td>$4</td>
+                            
+                        </tr>
+                </table>
+            </fieldset>
         </form>
     </body>
 </html>
