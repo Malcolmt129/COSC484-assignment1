@@ -7,6 +7,7 @@ table {
     border: 1px solid black;
     width: 75%;
     background-color: #808080;
+    text-align: center;
 }
 
 th {
@@ -18,9 +19,20 @@ td {
     border: 1px solid black;
     text-align: center;
 }
+/* 
+    The logo was taken from https://inside.towson.edu/brandAssets/brandmarks.cfm
 
+*/
 #logo {
     float: right;
     height: 250px;
-    width: 900px; 
+    width: 900px;
+}
+
+h2 {
+    color: #FFBB00;
+}
+
+a:hover {
+    color: #FFBB00;
 }
