@@ -1,11 +1,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="tueats.css">
+        <script type="text/javascript" src="tueats.js"></script>
     </head>
 
     <body>
         <h2>Welcome To TU Eats</h2>
-        <form method="get" action="tueats_completed.html">
+        <form method="get" onsubmit="return registerWarden() && passMatch() && refWarden();" action="tueats_completed.html">
             <fieldset>
                 
                 <legend>Sign up</legend>
@@ -14,19 +15,19 @@
                 <input type="text" name="username"  required /><br><br>
                 
                 <label for="email"> Email: </label>
-                <input type="text" name="email" required /><br><br>
+                <span><input type="text" name="email" required /></span><br><br>
 
-                <label for="username"> Referral Code: </label>
-                <input type="text" name="referral code" /><br><br>
+                <label for="ref_code"> Referral Code: </label>
+                <span><input type="text" name="ref_code" onkeyup="refWarden()"/></span><br><br>
                 
-                <label for="username"> Password: </label>
-                <input type="password" name="password" required><br><br>
+                <label for="password"> Password: </label>
+                <span><input type="password" name="password" required></span><br><br>
                 
-                <label for="username"> Verify Password: </label>
-                <input type="text" name="password_verify" required><br><br>
+                <label for="password_verify"> Verify Password: </label>
+                <span><input type="text" name="password_verify" required></span><br><br>
                 
                 
-                <input type="checkbox" name="SignUp">
+                <span><input type="checkbox" name="SignUp" ></span>
                 <label for="SignUp" id="SignUpText"> Sign up for our newsletter? </label><br><br>
 
                 <input type="submit">
